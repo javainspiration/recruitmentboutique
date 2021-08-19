@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Recruitment Boutique | Vacancy Create</title>
+    <style>
+        .btn:not(:disabled):not(.disabled) {
+            color: #27A5F0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="padding: 30px; height: 100vh;">
+                <div>
+                    <div class="nav flex-column nav-pills" style="color: #4D4D4D;" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <div class="text-center mb-4">
+                            <img src="assets/images/logo.png" class="img-fluid" width="40%" alt="" style="padding: 0">
+                        </div>
+                        <div style="background-color: #27A5F0; border-radius: 10px;color: #fff;padding: 5px 15px;">
+                            <h5 class="mt-2">Credits </h5>
+                            <h2 style="font-weight: bold;" class="credit">-</h2>
+                            <input type="hidden" name="userid" id="userid" class="userid">
+                        </div>
+                        <div class="mb-4 mt-3">
+                            <button class="btn btn-outline-primary"
+                                style="background-color: #F2F3F4; border-radius: 10px; float: right; padding: 5px 20px;">
+                                Top Up
+                            </button>
+                        </div>
+                        <a class="nav-link" style="color: #4D4D4D;" href="dashboard.html" role="tab"><img
+                                src="assets/images/home-outline-variant.svg" class="mr-2"
+                                style="margin-top: -5px;" />Dashboard</a>
+                        <a class="nav-link" style="color: #4D4D4D;" href="vacancy-setting.html" role="tab"><i
+                                class="far fa-user mr-2"
+                                style="font-size: 18px; background-color: #fff;"></i>Vacancy</a>
+                        <a class="nav-link" style="color: #4D4D4D;" href="support.html" role="tab"><img
+                                src="assets/images/customer-agent.svg" class="mr-2"
+                                style="margin-top: -5px;" />Support</a>
+                        <a class="nav-link" style="color: #4D4D4D;" href="settings.html" role="tab"><img
+                                src="assets/images/settings.svg" class="mr-2" style="margin-top: -5px;" />Settings</a>
+                        <div class="mb-4" style="bottom: 0;margin-top: 100px;text-align: center;">
+                            <a style="text-decoration: none;" href="index.html">
+                                <button class="btn" style="background-color: #F2F3F4; border-radius: 10px;width: 100%;">
+                                    <img src="assets/images/sign-out.svg" class="mr-2" />
+                                    <span style="color: #27A5F0">Sign Out</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" style="background-color: #F2F3F4;height: 100vh;overflow-x: hidden;padding: 0;">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-support" role="tabpanel"
+                        aria-labelledby="v-pills-support-tab">
+                        <div style="background-color: rgba(213, 239, 247, 0.5);height: 150px;">
+                            <div class="row" style="padding: 10px;">
+                                <div class="col-md-2 mt-3 ml-5">
+                                    <img src="assets/images/home-outline-variant-blue.svg"
+                                        style="margin-right: 10px;" />
+                                    <img src="assets/images/magnifying-glass.svg" />
+                                </div>
+                                <div class="col-md-5"></div>
+                                <div class="col-md-1 mt-3">
+                                    <img src="assets/images/bell.svg" />
+                                </div>
+                                <div class="col-md-3 mt-2"
+                                    style="background-color:rgba(255, 255, 255, 0.5);border-radius: 10px;">
+                                    <div class="row" style="margin-top: 10px;padding: 0 10px;">
+                                        <div class="mr-2"
+                                            style="background-color: rgba(79, 79, 79, 1); border-radius: 50px; height: 30px;width: 30px;">
+                                        </div>
+                                        <p class="profile-name" style="margin-top: 2px;"></p>
+                                        <input type="hidden" name="userid" id="userid">
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div style="padding: 0 50px;margin-top: -50px;">
+                            <div
+                                style="background: linear-gradient(to right, #B9D8EC 20%, #E8EFF4);border-radius: 10px;max-height: 150px;">
+                                <div class="row" style="padding: 20px;">
+                                    <div class="col-md-9" style="padding: 20px;">
+                                        <h2 style="color: #fff;font-weight: bold;">Top Up Credit</h2>
+                                        <p style="color: #fff;">You need to buy at least one credit to post a new vacancy</p>
+                                    </div>
+                                    <div class="col-md-3 mt-2 text-center">
+                                        <div style="background-color: #27A5F0; border-radius: 10px;color: #fff;padding: 5px 15px;">
+                                            <h5 class="mt-2">Your Credit </h5>
+                                            <h2 class="credit">-</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 50px;">
+                        <h3 style="font-weight: bold;">Fill the form to top up</h3>
+                        <p>We do not store credit card details nor do we share customer details with any 3rd parties</p>
+                        <div class="row mt-4" style="color: #27A5F0;">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-4">Number of credits</div>
+                                    <div class="col-md-8">
+                                        <input type="text"
+                                            placeholder="1"
+                                            required="required" style="border-radius: 9px;height: 33px;"
+                                            class="form-control fn shadow total_credit" value="1">
+                                            <p class="mt-1 ml-4" style="color: #4D4D4D; font-size: 12px;">*£249.99 + VAT / credit</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">Promo Code</div>
+                                    <div class="col-md-6">
+                                        <input type="text"
+                                            placeholder="Write your Promo Code"
+                                            required="required" style="border-radius: 9px;height: 33px;"
+                                            class="form-control fn shadow promo_code" id="promocode" name="promocode">
+                                        <input type="hidden" name="vpromo" id="vpromo" value="0">
+                                        <input type="hidden" name="idtrx" id="idtrx">
+                                        <p name="txtpromo" id="txtpromo"></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a href="#" id="btnpromo" name="btnpromo" class="btn btn-send btn-default text-white"
+                                            style="float: right;border-radius: 20px;background-color: #27A5F0;">Apply</a>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <a href="#" id="buy-btn" class="btn btn-send btn-default text-white"
+                                style="float: right;margin-top: 50px;border-radius: 20px;background-color: #27A5F0;padding: 5px 50px;">Buy</a>
+                                    </div>
+                                </div>
+                                <div class="row" id="confim-container" style="margin-top:50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="jason@recruitment-boutique.com">
+                            <input type="hidden" name="item_name" value="RB Credit">
+                            <input type="hidden" name="tx" value="TransactionID">
+                            <input type="hidden" name="currency_code" value="GBP">
+                            <input type="hidden" name="tax" id="tax-value" value="34.8">
+                            <input type="hidden" name="cancel_return" value="http://recruitment-boutique.com/client/dashboard.html" />
+                            <input type="hidden" name="notify_url" id="notify-url" value="" />
+                            <input type="hidden" name="landingpage" value="billing" />
+                            <input type="hidden" name="solutiontype" value="sole" />
+                            <input type='hidden' name='return' id="return-url" value=''>
+                            <input type="hidden" readonly="readonly" size="6" name="amount" value="249.99" style="border:none; text-align:right;" class="amounts" />
+                            <input type="hidden" readonly="readonly" size="6" name="quantity" value="1" id="credits" style="border:none; text-align:right;">
+                        </form>
+
+
+
+                    </div> -->
+
+                    <!--footer-->
+                    <div class="container">
+                        <div class="container text-center" style="padding: 25px;color: #27A5F0;">
+                            <div style="padding: 50px;">
+                                <p style="font-weight: 600;"><a style="text-decoration: none;color: #27A5F0;"
+                                        href="term.html">Terms & Conditions </a><span style="margin: 0 20px;">|</span>
+                                    <a style="text-decoration: none;color: #27A5F0;" href="privacy.html">Privacy
+                                        Policy</a></p>
+                                <p>O.T.C.S. is registered in England and Wales | It’s Company Registration Number is
+                                    11444931 <br>
+                                    Designed and built by Java Inspiration www.javainspiration.com <br>
+                                    ©2020 Recruitment Boutique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            var orderedItem = [];
+            $.ajax({
+                url: 'api/route.php',
+                type: 'GET',
+                headers: {
+                    'PAGE': 'profile',
+                    'AUTH': localStorage.getItem('bd1f264d')
+                },
+                success: function(res) {
+                    console.log(res);
+                    $('.profile-name').text(res[0].name);
+                    $('.credit').text(res[0].credits);
+                    $('.userid').val(res[0].id);
+                }
+            });
+
+            $('#btnpromo').click(function() {
+                $.ajax({
+                    url: 'api/route.php?path=cekPromo',
+                    type: 'POST',
+                    headers: {
+                        'PAGE': 'credit',
+                        'AUTH': localStorage.getItem('bd1f264d')
+                    },
+                    data: {
+                        promo_code: $('#promocode').val()
+                    },
+                    success: function(res){
+                        if (res.error_code === 0) {
+                            $('#vpromo').val(res['value']);
+                            $('#txtpromo').text("Code Promo valid");
+                            $("#txtpromo").css("background-color", "blue");
+                            $("#txtpromo").css("color", "white");
+                        }else{
+                            $('#txtpromo').text("Code Promo invalid");
+                            $("#txtpromo").css("background-color", "red");
+                            $("#txtpromo").css("color", "white");
+                            $('#vpromo').val(0);
+                            return false;
+                        }
+                    }
+                });
+            });
+
+            $('#buy-btn').click(function() {
+                if ($('.total_credit').val() < 1){
+                    alert("Number of credits can not be empty.");
+                    $('.total_credit').focus();
+                }else{
+                    var total = $('.total_credit').val() * 249.99;
+                    var promo = $('#vpromo').val()*1;
+                    var totalpromo = ($('.total_credit').val() * 249.99) - $('#vpromo').val();
+                    var vat = totalpromo * 0.2;
+                    var totalpayment = totalpromo + vat;
+                    $('#confim-container').html('<div class="col-md-4">Total Payment</div>\
+                                    <div class="col-md-8">\
+                                        <label style="width:50%;">Total </label>\
+                                        <label>: £'+total+'</label><br>\
+                                        <label style="width:50%;">Promo</label>\
+                                        <label>: £'+promo.toFixed(2)+'</label><br>\
+                                        <label style="width:50%;">VAT</label>\
+                                        <label>: £'+vat.toFixed(2)+'</label><br>\
+                                        <label style="width:50%;">Total Payment</label>\
+                                        <label>: £'+totalpayment.toFixed(2)+'</label><br>\
+                                        <a href="#" id="confirm-btn" class="btn btn-send btn-default text-white"\
+                                style="float: right;margin-top: 50px;border-radius: 20px;background-color: #27A5F0;padding: 5px 50px;">Continue to Payment</a>\
+                                    </div>'); 
+                    orderedItem.push({
+                        'name' : "Top Up Credits",
+                        'price' : totalpayment,
+                        'qty'   : $('.total_credit').val()
+                    });
+                    savePayment();
+                }
+                
+            });
+
+            $('body').on('click', '#confirm-btn', function () {
+                $.ajax({
+                    url: '../squareup/checkout.php',
+                    type: 'POST',
+                    data: {
+                        order: JSON.stringify(orderedItem),
+                        redirect_url: 'https://www.recruitment-boutique.com/thanks.html'
+                    },
+                    success: function(res){
+                        updateCredit();
+                    }
+                });
+            });
+
+            function updateCredit(){
+                $.ajax({
+                    url: 'api/route.php?path=updateKredit',
+                    type: 'POST',
+                    headers: {
+                        'PAGE': 'credit',
+                        'AUTH': localStorage.getItem('bd1f264d')
+                    },
+                    data: {
+                            kredit: $('.total_credit').val(),
+                            idtrx : $('#idtrx').val()
+                    },
+                    success: function(res) {
+                        console.log("update success");
+                    }
+                });
+            }
+
+            function savePayment(){
+                var total = $('.total_credit').val() * 249.99;
+                var promo = $('#vpromo').val()*1;
+                var totalpromo = ($('.total_credit').val() * 249.99) - $('#vpromo').val();
+                var vat = totalpromo * 0.2;
+                var totalpayment = totalpromo + vat;
+                $.ajax({
+                    url: 'api/route.php?path=savePay',
+                    type: 'POST',
+                    headers: {
+                        'PAGE': 'credit',
+                        'AUTH': localStorage.getItem('bd1f264d')
+                    },
+                    data: {
+                            total_credit: $('.total_credit').val(),
+                            amount: totalpayment,
+                            promo_code: $('#promocode').val(),
+                            userid : $('#userid').val()
+                    },
+                    success: function(res) {
+                        console.log(res['id']);
+                        $('#idtrx').val(res['id']);
+                    }
+                });
+            }
+        });
+
+        $(document).ready(function() {
+
+        });
+    </script>
+</body>
+
+</html>

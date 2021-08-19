@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Recruitment Boutique | SIGN UP</title>
+    <style>
+        .container canvas,
+        #overlay {
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Just an image -->
+    <nav id="navbar" class="navbar">
+        <a class="navbar-brand" href="#">
+            <div id="logos">
+                <img id="logo-rb" src="assets/images/logo.png" width="75%" alt="" style="padding: 0">
+            </div>
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html#home" style="margin-top:10px">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#work" style="margin-top:10px">How We Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#about" style="margin-top:10px">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#testimonials" style="margin-top:10px">Testimonials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#contact" style="margin-top:10px">Contact</a>
+            </li>
+            <li class="nav-item" style="border-radius: 20px; border: 1px solid white; padding: 5px; margin: -5px 10px;">
+                <a class="nav-link" href="vacancy.html" style="margin-top:10px">Vacancies</a>
+            </li>
+            <li class="nav-item"
+                style="color: white;background-color: #27A5F0; border-radius: 20px; margin: -5px 10px;padding: 5px 15px;">
+                <a class="nav-link" href="sign-in.html" style="font-size:12px;"><strong>Create <br> Account</strong></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--HOME-->
+    <div id="home" class="container-fluid"
+        style="overflow:hidden;padding: 25px 0 0 0;background: linear-gradient( rgba(213, 239, 247, 1) 90%, #FFFFFF)">
+        <div class="row" style="padding: 150px 0 0 0;color: white;">
+            <div class="col-md-3 text-center" style="margin-top: 20px;">
+                <img class="img-fluid" src="assets/images/Rectangle-40.png" width="60%">
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3" style="margin-top: -120px;">
+                <img class="img-fluid" src="assets/images/Rectangle-22.png" width="100%">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <canvas id="canvas" style="margin-top: -50px;top:0;left: 0;" width="1500" height="200"></canvas>
+    </div>
+
+    <div class="container" style="position: relative; background-color: #FFFFFF;margin-top: -300px;max-width: 50%; max-height: 455px;box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;">
+        <div>
+            <div class="row">
+                <div class="col-md-5"
+                    style="background: linear-gradient(#ABD3EB 70%, #FFFFFF);text-align: center;color: #FFFFFF;">
+                    <div style="padding: 150px 10px;">
+                        <h3><strong>Welcome!</strong></h3>
+                        <p>Already have an Account?<br>Login with your personal info</p>
+                        <div>
+                            <div
+                                style="text-align: center;;border: 1px solid #FFFFFF; border-radius: 20px;padding: 10px 15px;">
+                                <a style="color: #FFFFFF;" href="sign-in.html">SIGN IN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7" style="padding: 50px;">
+                    <form id="registerform" method="post">
+                        <h2 style="color:#27A5F0;text-align: center;padding: 20px;"><strong>Create Account</strong></h2>
+                        <p style="color:red;" id="txtmsg" ></p>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="firstname" id="firstname" style="padding: 10px;background-color: #EAEAEA;border: 1px solid #EAEAEA;border-radius: 10px;" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="lastname" id="lastname" style="padding: 10px;background-color: #EAEAEA;border: 1px solid #EAEAEA;border-radius: 10px;" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="username" id="username" style="padding: 10px;background-color: #EAEAEA;border: 1px solid #EAEAEA;border-radius: 10px;" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="organisation" id="organisation" style="padding: 10px;background-color: #EAEAEA;border: 1px solid #EAEAEA;border-radius: 10px;" class="form-control" placeholder="Company Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="email" name="email" id="email" style="padding: 10px;background-color: #EAEAEA;border: 1px solid #EAEAEA;border-radius: 10px;" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="telp" id="telp" style="padding: 10px;background-color: #EAEAEA;border: 1px solid #EAEAEA;border-radius: 10px;" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                style="text-align: center;;background-color: #27A5F0; border-radius: 20px;padding: 10px 15px;">
+                                <a style="color: #FFFFFF;" href="#" id="signup">SIGN UP</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 50px;">
+        <div class="container">
+            <p style="text-align: center; font-weight: 600;"><a style="text-decoration: none;color: #27A5F0;"
+                    href="term.html">Terms &
+                    Conditions </a><span style="margin: 0 20px;color: #27A5F0;">|</span> <a
+                    style="text-decoration: none;color: #27A5F0;" href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        var yPosMax = 125;
+        var yPosMin = 125;
+        var yPosStart = 150;
+        var xPosStart = -50;
+        var yPosChangeMultiplier = 60;
+        var xPosChangeMin = 125;
+        var xPosChangeMultiplier = 25;
+        var yControlMultiplier = 20;
+        var yControlMin = 40;
+
+        canvas = document.getElementById('canvas');
+        context = canvas.getContext('2d');
+        context.fillStyle = "white"
+        var xPos = xPosStart;
+        var yPos = yPosStart;
+        context.beginPath();
+        context.moveTo(xPos, yPos);
+        while (xPos < canvas.width) {
+            lastX = xPos;
+            xPos += Math.floor(Math.random() * xPosChangeMultiplier + xPosChangeMin);
+            yPos += Math.floor(Math.random() * yPosChangeMultiplier - yPosChangeMultiplier / 2);
+            while (yPos < yPosMin) {
+                yPos += Math.floor(Math.random() * yPosChangeMultiplier / 2);
+            }
+            while (yPos > yPosMax) {
+                yPos -= Math.floor(Math.random() * yPosChangeMultiplier / 2);
+            }
+            controlX = (lastX + xPos) / 2;
+            controlY = yPos - Math.floor(Math.random() * yControlMultiplier + yControlMin);
+            context.quadraticCurveTo(controlX, controlY, xPos, yPos);
+        }
+        context.lineTo(canvas.width, yPos);
+        context.lineTo(canvas.width, canvas.height);
+        context.lineTo(0, canvas.height);
+        context.fill();
+
+        canvasBlue = document.getElementById('canvasBlue');
+        context = canvasBlue.getContext('2d');
+        context.fillStyle = "#ABD3EB"
+        var xPos = xPosStart;
+        var yPos = yPosStart;
+        context.beginPath();
+        context.moveTo(xPos, yPos);
+        while (xPos < canvasBlue.width) {
+            lastX = xPos;
+            xPos += Math.floor(Math.random() * xPosChangeMultiplier + xPosChangeMin);
+            yPos += Math.floor(Math.random() * yPosChangeMultiplier - yPosChangeMultiplier / 2);
+            while (yPos < yPosMin) {
+                yPos += Math.floor(Math.random() * yPosChangeMultiplier / 2);
+            }
+            while (yPos > yPosMax) {
+                yPos -= Math.floor(Math.random() * yPosChangeMultiplier / 2);
+            }
+            controlX = (lastX + xPos) / 2;
+            controlY = yPos - Math.floor(Math.random() * yControlMultiplier + yControlMin);
+            context.quadraticCurveTo(controlX, controlY, xPos, yPos);
+        }
+        context.lineTo(canvasBlue.width, yPos);
+        context.lineTo(canvasBlue.width, canvasBlue.height);
+        context.lineTo(0, canvasBlue.height);
+        context.fill();
+    </script>
+
+    <script>
+        $(function(){
+            $('#signup').click(function(){
+                //console.log("Datas", $('#registerform').serializeArray())
+                $.ajax({
+                    url : 'api/route.php?path=setUsers',
+                    type: 'POST',
+                    headers: {
+                        'PAGE': 'auth',
+                    },
+                    data: $('#registerform').serializeArray(),
+                    beforeSend: function(){
+                        $('#signup').text('Loading ...');
+                    },
+                    success: function(res) {
+                        //console.log(res);
+                        if (res.error_code != 0) {
+                            document.getElementById("txtmsg").text(res.error_msg);
+                            $('#signup').text('SIGN IN');
+                            return;
+                        }else{
+                            document.getElementById("txtmsg").text(res.error_msg);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

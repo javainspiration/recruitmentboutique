@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Recruitment Boutique | Vacancy Create</title>
+    <style>
+        .btn:not(:disabled):not(.disabled) {
+            color: #27A5F0;
+        }
+        td{
+            padding-bottom: 10px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="padding: 30px; height: 100vh;">
+                <div>
+                    <div class="nav flex-column nav-pills" style="color: #4D4D4D;" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <div class="text-center mb-4">
+                            <img src="assets/images/logo.png" class="img-fluid" width="40%" alt="" style="padding: 0">
+                        </div>
+                        <div style="background-color: #27A5F0; border-radius: 10px;color: #fff;padding: 5px 15px;">
+                            <h5 class="mt-2">Credits</h5>
+                            <h2 style="font-weight: bold;" id="total-credits"></h2>
+                        </div>
+                        <div class="mb-4 mt-3">
+                            <a style="text-decoration: none;" href="top-up.html">
+                                <button class="btn btn-outline-primary"
+                                    style="background-color: #F2F3F4; border-radius: 10px; float: right; padding: 5px 20px;">
+                                    Top Up
+                                </button>
+                            </a>
+                        </div>
+                        <a class="nav-link" style="color: #4D4D4D;" href="dashboard.html" role="tab"><img
+                                src="assets/images/home-outline-variant.svg" class="mr-2"
+                                style="margin-top: -5px;" />Dashboard</a>
+                        <a class="nav-link active" data-toggle="pill" aria-controls="v-pills-settings" aria-selected="true" href="vacancy-setting.html" role="tab"><i
+                                class="far fa-user mr-2"
+                                style="font-size: 18px;"></i>Vacancy</a>
+                        <a class="nav-link" href="support.html" style="color: #4D4D4D;" role="tab"><img
+                                src="assets/images/customer-agent.svg" class="mr-2"
+                                style="margin-top: -5px;" />Support</a>
+                        <a class="nav-link" style="color: #4D4D4D;" href="settings.html" role="tab"><img
+                                src="assets/images/settings.svg" class="mr-2" style="margin-top: -5px;" />Settings</a>
+                        <div class="mb-4" style="bottom: 0;margin-top: 100px;text-align: center;">
+                            <a style="text-decoration: none;" href="index.html">
+                                <button class="btn" style="background-color: #F2F3F4; border-radius: 10px;width: 100%;">
+                                    <img src="assets/images/sign-out.svg" class="mr-2" />
+                                    <span style="color: #27A5F0">Sign Out</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" style="background-color: #F2F3F4;height: 100vh;overflow-x: hidden;padding: 0;">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-support" role="tabpanel"
+                        aria-labelledby="v-pills-support-tab">
+                        <div style="background-color: rgba(213, 239, 247, 0.5);height: 150px;">
+                            <div class="row" style="padding: 10px;">
+                                <div class="col-md-2 mt-3 ml-5">
+                                    <img src="assets/images/home-outline-variant-blue.svg"
+                                        style="margin-right: 10px; display: none" />
+                                    <img src="assets/images/magnifying-glass.svg" style="display: none;" />
+                                </div>
+                                <div class="col-md-5"></div>
+                                <div class="col-md-1 mt-3">
+                                    <img src="assets/images/bell.svg" style="display: none;" />
+                                </div>
+                                <div class="col-md-3 mt-2"
+                                    style="background-color:rgba(255, 255, 255, 0.5);border-radius: 10px;">
+                                    <div class="row" style="margin-top: 10px;padding: 0 10px;">
+                                        <div class="mr-2"
+                                            style="background-color: rgba(79, 79, 79, 1); border-radius: 50px; height: 30px;width: 30px;">
+                                        </div>
+                                        <p style="margin-top: 2px;" class="profile-name">...</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div style="padding: 0 50px;margin-top: -50px;">
+                            <div
+                                style="background: linear-gradient(to right, #B9D8EC 20%, #E8EFF4);border-radius: 10px;max-height: 150px;">
+                                <div class="row" style="padding: 20px;">
+                                    <div class="col-md-9" style="padding: 20px;">
+                                        <h2 style="color: #fff;font-weight: bold;">New Vacancy</h2>
+                                        <p style="color: #fff;">Please fill form below to make a new vacancy job.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/images/Resume-rafiki.png" width="110%"
+                                            style="margin-left: -20px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 10px 50px;">
+                        <img src="assets/images/Rectangle-40.png" width="15%" style="float: right;" />
+                    </div>
+                    <div style="padding: 50px;">
+                        <div class="row mt-4" style="color: #27A5F0;">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form method="post" action="api/vacancyform.php" id="addVacan">
+                                            <table  style=" width:100%;border-collapse:collapse;">
+                                                <tr>
+                                                    <td>Job Reference</td>
+                                                    <td>
+                                                        <input name="jobref" class="field form-control" type="text" id="jobref" readonly="true" size="20" value=""  />
+                                                        <input type="text" name="id" id="vacancyid" style="display: none"/>
+                                                        <input type="text" id="auth" name="auth" style="display: none;"/>
+                                                    </td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Client ref</td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="clientref" style="width:150px;" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company name</td>
+                                                <td>
+                                                    <input type="text" name="companyname" class="form-control" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company website</td>
+                                                <td>
+                                                    <input type="text" name="companywebsite" class="form-control" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Job title
+                                                    <span style="color:#FF0000;">*</span>
+                                                </td>
+                                                <td class="" style='padding-left:3px; border: 1px #ffffff solid; height:25px;'>
+                                                    <input type="text" name="jobtitle" class="form-control" maxlength="100" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Location of position
+
+                                                    <span style="color:#FF0000;">*</span>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="location" class="form-control" style="width:200px;" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Limit distance from location</td>
+                                                <td>
+                                                    <input class="form-control" type="text" name="limitdistance" size="10"  style="width: 50px;display: inline" /> km
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Relocation supported</td>
+                                                <td>
+                                                    <input type="radio" value="yes"  name="relocationsupport" />
+                                                      Yes
+
+                                                    <input type="radio" name="relocationsupport" checked="checked" value="no" />
+                                                        No
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Include CVs over 3 months old</td>
+                                                <td>
+                                                    <input type="radio" value="yes" name="includecv" />
+                                                      Yes
+
+                                                    <input type="radio" name="includecv" checked="checked" value="no" />
+                                                        No
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Permanent or contract</td>
+                                                <td>
+                                                    <input type="radio" value="Permanent"  name="permcontract" />
+                                                      Permanent
+
+                                                    <input type="radio" name="permcontract" checked="checked" value="Contract" />
+                                                        Contract
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Length of contract (if contract)</td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="contractlength" size="10" />
+                                            months
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="" colspan="2">
+                                                    <br/>
+                                                                Salary
+
+                                                    <span style="color:#FF0000;">*</span>
+                                                    <select name="salary_periode" class="form-control" style="width: 150px;display: inline;margin-right:120px;">
+                                                        <option value="annual" selected="selected">Annually</option>
+                                                        <option value="hour">Hourly</option>
+                                                        <option value="day">Daily</option>
+                                                    </select>
+                                                            From
+                                                    <input type="text" name="salary" size="20" class="form-control" style="width:100px;display: inline;" /> to
+                                                    <input type="text" name="salary2" size="20" class="form-control"  style="width:100px;display: inline;"/> (GBP)
+                                                    <br />
+                                                    <br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Would you accept CVs from candidates
+                                                    <br/>who have previously worked within your organisation?
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="oldcandidate" value="yes" />&nbsp;Yes&nbsp;
+
+                                                    <input type="radio" name="oldcandidate" value="no" checked="checked" />&nbsp;No
+                                                    <br />
+                                                    <br />
+                                                            &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Benefits</td>
+                                                <td style=''>
+                                                    <input type="text" class="form-control" name="benefit" size="20" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="" style="">Number required
+                                                    <br />
+                                                </td>
+                                                <td>(please state number of contract or permanent required)
+                                                    <br/>
+                                                    <input type="text" name="numberreq"  class="form-control" size="10" style="width:100px;" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Start date (yyyy-mm-dd)</td>
+                                                <td>
+                                                    <input type="text" name="startdate" id="startdate" size="17" class="form-control" style="width:100px;" placeholder="yyyy-mm-dd" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Description of tasks
+                                                    <span style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#FF0000; font-weight:bold;">*</span>
+                                                </td>
+                                                <td class="" style=''>
+                                                    <br />
+                                                    <textarea name="tasks" cols="53" rows="6"  class="form-control"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Essential qualifications/skills/
+                                                    <br/>experience
+                                                    <!--<span style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#FF0000; font-weight:bold;">*</span>-->
+                                                </td>
+                                                <td>
+                                                    <br />
+                                                    <textarea  class="form-control" name="essentialqual" cols="53" rows="6"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Additional desirable qualifications/skills</td>
+                                                <td>
+                                                    <textarea name="additionalqual"  class="form-control" cols="53" rows="6"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Equivalent vocational and trade qualifications
+                                                    <!--<span style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#FF0000; font-weight:bold;">*</span>-->
+                                                </td>
+                                                <td class="" style=''>
+                                                    <br />
+                                                    <textarea name="equivalentvoc"  class="form-control" cols="53" rows="6"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Comparable/equivalent job titles
+                                                    <!--<span style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#FF0000; font-weight:bold;">*</span>-->
+                                                </td>
+                                                <td class="" style=''>
+                                                    <br />
+                                                    <textarea name="comparablejob"  class="form-control" cols="53" rows="6"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="">Comparable sectors
+                                                    <span style="font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#FF0000; font-weight:bold;">*</span>
+                                                </td>
+                                                <td class="" style=''>
+                                                    <br />
+                                                    <textarea name="comparablesectors" cols="53" class="form-control" rows="6"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Special Requirements</td>
+                                                <td>
+                                                    <input type="text" name="special_req" size="20" class="form-control" maxlength="250" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class=""  style="; padding-top:20px; padding-bottom:20px;">Candidate communication</td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""  style="; ">Can your company's name
+                                                    <br/>be used in ads?
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="name_ads" value="yes" />&nbsp;Yes&nbsp;
+
+                                                    <input type="radio" name="name_ads" value="no" checked="checked" />&nbsp;No
+                                                    <br />
+                                                    <br />
+                                                            &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" >When a candidate is uploaded to your client area, we send them an email to let them know that their CV has been submitted.
+                                                    Can we include your company name in this email?
+
+                                                    <br/>
+                                                    <input type="radio" name="name_email" value="yes" />&nbsp;Yes&nbsp;
+
+                                                    <input type="radio" name="name_email" value="no" checked="checked" />&nbsp;No
+                                                    <br />
+                                                    <br />
+                                                            &nbsp;
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td class=""  style="">Attach document</td>
+                                                <td>
+                                                    <span class="" style="padding-left:3px; border: 1px #ffffff solid;">
+                                                        <input type="file" name="file" size="28" />
+                                                    </span>
+                                                </td>
+                                            </tr> -->
+                                            <tr>
+                                                <td colspan="2" class="" style="padding-right:30px; height:45px; ; text-align:center">
+                                                    <input style="display:none;" type="submit" value="Preview" name="tbl_preview" />
+                                                    <input type="submit" value="Submit" name="submit" />
+                                                    <input type="reset" value="Reset" name="btnreset" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--footer-->
+                    <div class="container">
+                        <div class="container text-center" style="padding: 25px;color: #27A5F0;">
+                            <div style="padding: 50px;">
+                                <p style="font-weight: 600;"><a style="text-decoration: none;color: #27A5F0;"
+                                        href="term.html">Terms & Conditions </a><span style="margin: 0 20px;">|</span>
+                                    <a style="text-decoration: none;color: #27A5F0;" href="privacy.html">Privacy
+                                        Policy</a></p>
+                                <p>O.T.C.S. is registered in England and Wales | It’s Company Registration Number is
+                                    11444931 <br>
+                                    Designed and built by Java Inspiration www.javainspiration.com <br>
+                                    ©2020 Recruitment Boutique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#jobref').val((btoa(Math.random()*1000).substr(0, 3) +'-'+btoa(Math.random()*100000).substr(4, 6)).toUpperCase());
+            $('#auth').val(localStorage.getItem('bd1f264d'));
+
+            function loadVacancy(userName) {    
+                var url = window.location.href.split('?id=');
+                console.log(url);
+                if (url.length < 1) {
+                    return;
+                }
+
+                    var vacancyid = url[1].replace(/#/g, '');
+
+                    $('#vacancyid').val(vacancyid);
+
+                    $.ajax({
+                        url: 'api/route.php?path=getDetailVacancy',
+                        type: 'POST',
+                        headers: {
+                            'PAGE': 'vacancies',
+                            'AUTH': localStorage.getItem('bd1f264d'),
+                        },
+                        data: {
+                            username: userName,
+                            id: vacancyid
+                        },
+                        success: function(res) {
+                            if (res.data && res.data.length > 0) {
+                                var salaryExploded = res.data[0].salarytext.split(' GBP/');
+                                if (salaryExploded) {
+                                    var salary2 = salaryExploded[0].split(' - ')[1];
+                                    if (salary2) {
+                                        res.data[0].salary2 = salary2;
+                                    }
+
+                                    res.data[0].salary_periode = salaryExploded[1];
+                                }
+
+                                $.each(res.data[0], function(index, val){
+                                    $('[name="'+index+'"]').val(val);
+                                });
+                            }
+                        }
+                    });
+            }
+
+            $.ajax({
+                url: 'api/route.php',
+                type: 'GET',
+                headers: {
+                    'PAGE': 'profile',
+                    'AUTH': localStorage.getItem('bd1f264d')
+                },
+                success: function(res) {
+                    $('.profile-name').text(res[0].name);
+                    loadVacancy(res[0].username);
+                }
+            });
+
+            $.ajax({
+                url : 'api/route.php',
+                type : 'GET',
+                dataType : 'json',
+                headers: {
+                    'PAGE': 'dashboard',
+                    'AUTH': localStorage.getItem('bd1f264d')
+                },
+                success: function(res) {
+                    if (res.data) {
+                        $('#total-active-vacancies').html(res.data.totalProgressVacancies+' Active Vacancies');
+                        $('#total-complete-vacancies').html(res.data.totalCompleteVacancies+' Complete Vacancies');
+                        $('#total-candidates').html(res.data.totalCandidates+' Candidates');
+                        $('#total-credits').html(res.data.totalCredits+' Credits');
+                    }
+                }
+            });
+
+            /*var frm = $('#addVacan');
+
+            frm.submit(function (e) {
+                alert("sini cuy");
+                e.preventDefault();
+
+                $.ajax({
+                    type: frm.attr('method'),
+                    url: frm.attr('action'),
+                    data: frm.serialize(),
+                    success: function (data) {
+                        console.log('Submission was successful.');
+                        console.log(data);
+                        alert("Thanks for your application.");
+                    },
+                    error: function (data) {
+                        console.log('An error occurred.');
+                        console.log(data);
+                    },
+                });
+            });*/
+        });
+    </script>
+</body>
+
+</html>

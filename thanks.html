@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Recruitment Boutique | Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="padding: 30px; height: 100vh;">
+                <div>
+                    <div class="nav flex-column nav-pills" style="color: #4D4D4D;" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <div class="text-center mb-4">
+                            <img src="assets/images/logo.png" class="img-fluid" width="40%" alt="" style="padding: 0">
+                        </div>
+                        <div style="background-color: #27A5F0; border-radius: 10px;color: #fff;padding: 5px 15px;">
+                            <h5 class="mt-2">Credits </h5>
+                            <h2 id="total-credits" style="font-weight: bold;">$0</h2>
+                        </div>
+                        <div class="mb-4 mt-3">
+                            <a style="text-decoration: none;" href="top-up.html">
+                                <button class="btn btn-outline-primary"
+                                    style="background-color: #F2F3F4; border-radius: 10px; float: right; padding: 5px 20px;">
+                                    Top Up
+                                </button>
+                            </a>
+                        </div>
+                        <a class="nav-link" href="dashboard.html" style="color: #4D4D4D;"><img
+			        src="assets/images/home-outline-variant.svg" class="mr-2"
+                                class="mr-2" style="margin-top: -5px;" />Dashboard</a>
+                        <a class="nav-link" style="color: #4D4D4D;" href="vacancy-setting.html" role="tab"><i
+                                class="far fa-user mr-2"
+                                style="font-size: 18px; background-color: #fff;"></i>Vacancy</a>
+                        <a class="nav-link" style="color: #4D4D4D;" href="support.html" role="tab"><img
+                                src="assets/images/customer-agent.svg" class="mr-2"
+                                style="margin-top: -5px;" />Support</a>
+                        <a class="nav-link" role="tab" style="color: #4D4D4D;" href=" settings.html"><img
+                                src="assets/images/settings.svg" class="mr-2" style="margin-top: -5px;" />Settings</a>
+                        <div class="mb-4" style="bottom: 0;margin-top: 100px;text-align: center;">
+                            <a style="text-decoration: none;" href="index.html">
+                                <button class="btn" style="background-color: #F2F3F4; border-radius: 10px;width: 100%;">
+                                    <img src="assets/images/sign-out.svg" class="mr-2" />
+                                    <span style="color: #27A5F0">Sign Out</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" style="background-color: #F2F3F4;height: 100vh;overflow-x: hidden;padding: 0;">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-support" role="tabpanel"
+                        aria-labelledby="v-pills-support-tab">
+                        <div style="background-color: rgba(213, 239, 247, 0.5);height: 150px;">
+                            <div class="row" style="padding: 10px;">
+                                <div class="col-md-2 mt-3 ml-5">
+                                    <img src="assets/images/home-outline-variant-blue.svg"
+                                        style="margin-right: 10px;display: none" />
+                                    <img src="assets/images/magnifying-glass.svg" style="display: none;" />
+                                </div>
+                                <div class="col-md-5"></div>
+                                <div class="col-md-1 mt-3">
+                                    <img src="assets/images/bell.svg" style="display: none;" />
+                                </div>
+                                <div class="col-md-3 mt-2"
+                                    style="background-color:rgba(255, 255, 255, 0.5);border-radius: 10px;">
+                                    <div class="row" style="margin-top: 10px;padding: 0 10px;">
+                                        <div class="mr-2"
+                                            style="background-color: rgba(79, 79, 79, 1); border-radius: 50px; height: 30px;width: 30px;">
+                                        </div>
+                                        <p class="profile-name" style="margin-top: 2px;"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div style="padding: 0 50px;margin-top: -50px;">
+                            <div
+                                style="background: linear-gradient(to right, #B9D8EC 20%, #E8EFF4);border-radius: 10px;max-height: 150px;">
+                                <div class="row" style="padding: 20px;">
+                                    <div class="col-md-9" style="padding: 20px;">
+                                        <h2 style="color: #fff;font-weight: bold;">Hello! <span class="profile-name"></span></h2>
+                                        <p style="color: #fff;">This is your personal homepage at Recruitment Boutique
+                                            client service area.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/images/header-dash.png" width="150%"
+                                            style="margin-left: -20px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:80px;">
+                    <div class="col">
+                        <div class="container" style="padding: 50px;">
+                            <h3 style="font-weight: bold;">Thank you!</h3>
+                            <div class="row mt-4" style="padding: 5px 10px;color: #27A5F0;">
+                                <div class="col-md-12">
+                                    <h3 style="font-weight: bold;color: #27A5F0;">Your credit already added.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer-->
+                <div class="container">
+                    <div class="container text-center" style="padding: 25px;color: #27A5F0;">
+                        <div style="padding: 50px;">
+                            <p style="font-weight: 600;"><a style="text-decoration: none;color: #27A5F0;"
+                                    href="term.html">Terms & Conditions </a><span style="margin: 0 20px;">|</span>
+                                <a style="text-decoration: none;color: #27A5F0;" href="privacy.html">Privacy
+                                    Policy</a></p>
+                            <p>O.T.C.S. is registered in England and Wales | It’s Company Registration Number is
+                                11444931 <br>
+                                Designed and built by Java Inspiration www.javainspiration.com <br>
+                                ©2020 Recruitment Boutique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            $.ajax({
+                url : 'api/route.php',
+                type : 'GET',
+                dataType : 'json',
+                headers: {
+                    'PAGE': 'dashboard',
+                    'AUTH': localStorage.getItem('bd1f264d')
+                },
+                success: function(res) {
+                    if (res.data) {
+                        $('#total-active-vacancies').html(res.data.totalProgressVacancies+' Active Vacancies');
+                        $('#total-complete-vacancies').html(res.data.totalCompleteVacancies+' Complete Vacancies');
+                        /*$('#total-candidates').html(res.data.totalCandidates+' Candidates');*/
+                        $('#total-credits').html(res.data.totalCredits+' Credits');
+                    }
+                }
+            });
+
+            $.ajax({
+                url: 'api/route.php',
+                type: 'GET',
+                headers: {
+                    'PAGE': 'profile',
+                    'AUTH': localStorage.getItem('bd1f264d')
+                },
+                success: function(res) {
+                    console.log(res);
+                    $('.profile-name').text(res[0].name);
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>	
